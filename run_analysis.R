@@ -54,7 +54,7 @@ X_mean_std <- select(X_data, matches("mean|std"))
 # X_data already has descriptive name
 
 y_data <-
-  inner_join(y_data, activity_labels, by = "ID") %>% select(activity)
+  inner_join(y_data, activityLabels, by = "ID") %>% select(activity)
 
 # 4. Appropriately labels the data set with descriptive variable names
 
